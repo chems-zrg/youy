@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import twitter from "../image/twitter-svgrepo-com.svg";
@@ -10,7 +10,21 @@ import linkedin from "../image/linkedin-1-svgrepo-com.svg";
 export default function Navbar() {
   const location = useLocation();
   const MotionLink = motion(Link);
+  const [color, setcolor] = useState(false);
+  const changecolor = () => {
+    if (window.scrollY >= 90) {
+      setcolor(true);
+    } else {
+      setcolor(false);
+    }
+  };
 
+  useEffect(() => {
+    window.addEventListener("scroll", changecolor);
+    return () => {
+      window.removeEventListener("scroll", changecolor);
+    };
+  }, []);
   const CustomLink = ({ to, title, className = "" }) => {
     return (
       <Link to={to} className={`${className} group relative`}>
@@ -27,11 +41,17 @@ export default function Navbar() {
   };
 
   return (
-    <div className="flex items-center justify-between px-32 py-8 ">
+    <div
+      className={`flex items-center justify-between px-32 py-5 w-full mb-6 z-50 fixed transition-colors duration-300 ${
+        color ? "bg-[rgb(33_51_41/0.4)] h-20 text-white " : ""
+      }`}
+    >
       <div className="flex mb-3 ">
         <CustomLink to="/" title="Home" className="mx-4" />
         <CustomLink to="/about" title="About" className="mx-4" />
+        <CustomLink to="/Skills" title="Skills" className="ml-4" />
         <CustomLink to="/project" title="Project" className="ml-4" />
+        <CustomLink to="/project" title="Contact" className="ml-4" />
       </div>
       <MotionLink
         to="/"
@@ -68,7 +88,7 @@ export default function Navbar() {
             alt=""
           />
         </Link>{" "}
-        <Link to="https://www.facebook.com/profile.php?id=100009142466257">
+        <Link to="https://github.com/YOUNESyoyou123">
           <img
             src={github}
             alt=""
