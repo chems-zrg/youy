@@ -3,8 +3,12 @@ import { transform } from "framer-motion";
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        dark: "#1B1B1B",
+      },
       fontFamily: {
         playfair: ['"Playfair Display"', "serif"],
         montserrat: ["Playfair Display", "serif"],

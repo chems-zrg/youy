@@ -16,10 +16,10 @@ const animate = {
 const AnimatedText = ({ text, className = "" }) => {
   return (
     <div
-      className={`w-full mx-auto flex items-center justify-center  mb-4 ${className}`}
+      className={`w-full mx-auto flex items-center justify-center    mb-4 ${className}`}
     >
       <motion.h1
-        className={`inline-block w-full text-black font-bold text-6xl text-left ${className}`}
+        className={`inline-block w-full text-black font-bold sm:text-center dark:text-white text-6xl max-sm:text-3xl  md:text-4xl  lg:text-6xl lg:text-left   max-md:text-5xl  max-lg:text-6xl ${className}`}
         variants={animate}
         initial="initial"
         animate="animate"
