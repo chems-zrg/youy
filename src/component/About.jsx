@@ -84,7 +84,7 @@ export default function About() {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 1, delay: 1.26 }}
                 >
-                  2021-2024
+                  2019-2022
                 </motion.p>
               </div>
               <motion.div style={{ pathLength: scrollYProgress }}>
@@ -142,7 +142,7 @@ export default function About() {
                   whileInView={{ opacity: 1 }}
                   transition={{ duration: 1, delay: 2.6 }}
                 >
-                  2024-2026
+                  2022-2024
                 </motion.p>
               </div>
               <div>

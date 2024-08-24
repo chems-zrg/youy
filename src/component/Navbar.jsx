@@ -158,7 +158,7 @@ export default function Navbar({ scrollToSection }) {
           }}
           animate={{ backgroundColor: "#1B1B1B" }} // Ensure it returns to default
         >
-          ZR.Y
+          ZR.C
         </MotionLink>
         <div className="relative   flex items-center lg:mb-0  mb-3 justify-center  lg:hidden ">
           <img
