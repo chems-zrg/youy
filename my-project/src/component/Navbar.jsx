@@ -9,6 +9,7 @@ import linkedin from "../image/linkedin-1-svgrepo-com.svg";
 import hireme from "../image/vmJwG401.svg";
 import useThemeSwitcher from "./useThemeSwitcher";
 import moon from "../Image2/icons8-pleine-lune-48.png";
+import sun from "../Image2/icons8-soleil-64.png"
 
 export default function Navbar({ scrollToSection }) {
   const [isOpen, setisOpen] = useState(false);
@@ -157,7 +158,7 @@ export default function Navbar({ scrollToSection }) {
           }}
           animate={{ backgroundColor: "#1B1B1B" }} // Ensure it returns to default
         >
-          ZR.Y
+          ZR.C
         </MotionLink>
         <div className="relative   flex items-center lg:mb-0  mb-3 justify-center  lg:hidden ">
           <img
@@ -216,7 +217,7 @@ export default function Navbar({ scrollToSection }) {
             }}
           >
             {mode === "dark" ? (
-              <img src={moon} className="  ml-3 w-8" alt="Dark mode" />
+              <img src={sun} className="  ml-3 w-8" alt="Dark mode" />
             ) : (
               <img src={moon} alt="Light mode" className="  ml-3 w-8" />
             )}

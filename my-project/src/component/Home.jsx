@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "./layout";
-import profileImage from "../image/developer-pic-1.png";
+import profileImage from "../image/pikasi.png";
 import AnimatedText from "./AnimatedText";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";

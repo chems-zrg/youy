@@ -129,7 +129,7 @@ const Contact = () => {
             </div>
             <div className="flex items-center my-10">
               <MdOutlineMail className="mr-4 text-3xl text-[#FA949D] dark:text-[#f9c389]" />
-              <h1 className="text-xl text-white">youneszergine@gmail.com</h1>
+              <h1 className="text-xl text-white">chems.zerguine12@gmail.com</h1>
             </div>
             <div className="flex items-center my-10">
               <TbGps className="mr-4 text-3xl text-[#FA949D] dark:text-[#f9c389]" />
