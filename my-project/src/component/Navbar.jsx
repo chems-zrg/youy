@@ -9,7 +9,7 @@ import linkedin from "../image/linkedin-1-svgrepo-com.svg";
 import hireme from "../image/vmJwG401.svg";
 import useThemeSwitcher from "./useThemeSwitcher";
 import moon from "../Image2/icons8-pleine-lune-48.png";
-import sun from "../Image2/icons8-soleil-64.png"
+import sun from "../Image2/icons8-soleil-64.png";
 
 export default function Navbar({ scrollToSection }) {
   const [isOpen, setisOpen] = useState(false);
@@ -237,7 +237,12 @@ export default function Navbar({ scrollToSection }) {
       >
         /
         <div className="flex flex-col lg:mb-3   justify-start  items-center   mb-4 ">
-          <CustomLinkmenu to="/" title="Home" sectionId="Home" className="mb-1" />
+          <CustomLinkmenu
+            to="/"
+            title="Home"
+            sectionId="Home"
+            className="mb-1"
+          />
           <CustomLinkmenu
             to="/about"
             title="About"
@@ -265,7 +270,7 @@ export default function Navbar({ scrollToSection }) {
         </div>
         <div className="  flex   items-center    justify-center   ">
           <Link
-            to="https://www.facebook.com/profile.php?id=100009142466257 "
+            to=""
             className="  transition  ease duration-75 hover:-translate-y-0.5  "
           >
             <img
@@ -274,21 +279,21 @@ export default function Navbar({ scrollToSection }) {
               className="w-8 mr-4 transition  ease duration-75 hover:-translate-y-0.5"
             />
           </Link>
-          <Link to="https://x.com/youneszerg">
+          <Link to="">
             <img
               src={twitter}
               className="w-9 mr-4 transition  ease duration-75 hover:-translate-y-0.5"
               alt=""
             />
           </Link>{" "}
-          <Link to="https://github.com/YOUNESyoyou123">
+          <Link to="">
             <img
               src={github}
               alt=""
               className="w-7 translate-y-0.5	 mr-4 transition  ease duration-75 hover:-translate-y-0.5"
             />
           </Link>{" "}
-          <Link to="https://www.facebook.com/profile.php?id=100009142466257">
+          <Link to="">
             <img
               src={linkedin}
               alt=""
@@ -296,7 +301,7 @@ export default function Navbar({ scrollToSection }) {
             />
           </Link>{" "}
           <Link
-            to="https://www.facebook.com/profile.php?id=100009142466257"
+            to=""
             className=" transition  ease duration-75 hover:-translate-y-0.5"
           >
             <img src={telegram} alt="" className="w-8   " />
