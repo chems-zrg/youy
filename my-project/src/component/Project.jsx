@@ -91,7 +91,7 @@ export default function Project() {
             </div>
           </motion.a>
           <motion.a
-            href=""
+            href="https://chems-zrg.github.io/youy/"
             class=" group  cursor-pointer group overflow-hidden relative h-[240px] text-gray-50  md:h-[400px] lg:h-72 w-full lg:w-[470px] rounded-2xl hover:duration-700 duration-700 mb-5 shadow-xl"
             initial={{ opacity: 0, x: 100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -150,7 +150,7 @@ export default function Project() {
           </motion.a>
 
           <motion.a
-            href=""
+            href="https://chems-zrg.github.io/amazonforest/#/firstpage"
             target="_blanck"
             className="col-span-2  max-w-[100%]  lg:h-[300px]  shadow-xl"
             initial={{ opacity: 0, y: 100 }}
