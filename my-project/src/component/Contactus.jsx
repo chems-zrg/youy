@@ -125,7 +125,7 @@ const Contact = () => {
           <div className="mt-20">
             <div className="flex items-center my-10">
               <FaPhoneAlt className="mr-4 text-2xl text-[#FA949D] dark:text-[#f9c389]" />
-              <h1 className="text-xl text-white">+213672491906</h1>
+              <h1 className="text-xl text-white">+213675799726</h1>
             </div>
             <div className="flex items-center my-10">
               <MdOutlineMail className="mr-4 text-3xl text-[#FA949D] dark:text-[#f9c389]" />

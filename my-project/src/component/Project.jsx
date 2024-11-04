@@ -1,7 +1,7 @@
 import React from "react";
-import imgprj from "../image/image.png";
+import imgprj from "../Image2/imf.png";
 import bg from "../image/bg.jpg";
-import prj2 from "../image/prj2.png";
+import prj2 from "../Image2/image.png";
 import bg2 from "../image/bg2.avif";
 import video from "../image/vid.mp4";
 import { motion } from "framer-motion";
